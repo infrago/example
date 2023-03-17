@@ -1,2 +1,11 @@
 name = "infrago"
 mode = "dev"
+
+
+[http]
+port = 81
+
+
+
+[setting]
+msg = "hello"
