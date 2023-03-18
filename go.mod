@@ -16,13 +16,23 @@ replace github.com/infrago/view => ../view
 
 replace github.com/infrago/view-default => ../view-default
 
+replace github.com/infrago/cache => ../cache
+
+replace github.com/infrago/cache-default => ../cache-default
+
+replace github.com/infrago/cache-redis => ../cache-redis
+
+replace github.com/infrago/cache-buntdb => ../cache-buntdb
+
 require (
-	github.com/infrago/base v0.0.0-00010101000000-000000000000 // indirect
+	github.com/infrago/base v0.0.0-00010101000000-000000000000
 	github.com/infrago/infra v0.0.0-00010101000000-000000000000
 	github.com/infrago/util v0.0.0-00010101000000-000000000000 // indirect
 )
 
 require (
+	github.com/infrago/cache v0.0.0-00010101000000-000000000000
+	github.com/infrago/cache-default v0.0.0-00010101000000-000000000000
 	github.com/infrago/http v0.0.0-00010101000000-000000000000
 	github.com/infrago/http-default v0.0.0-20230317082929-e99618b22fae
 	github.com/infrago/view-default v0.0.0-00010101000000-000000000000
