@@ -3,11 +3,16 @@ mode = "dev"
 
 
 [http]
-port = 81
+port = 80
 
 [cache]
 driver = "redis"
 
+[mutex]
+driver = "redis"
+
+[queue]
+driver = "redis"
 
 [setting]
 msg = "hello"
