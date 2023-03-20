@@ -4,7 +4,6 @@ import (
 	. "github.com/infrago/base"
 	"github.com/infrago/http"
 	"github.com/infrago/infra"
-	"github.com/infrago/log"
 	"github.com/infrago/store"
 )
 
@@ -19,7 +18,7 @@ func init() {
 				return
 			}
 
-			log.Debug("xxxx", file)
+			infra.Debug("xxxx", file)
 
 			ctx.JSON(Map{
 				"file": file.Code(),

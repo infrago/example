@@ -6,7 +6,6 @@ import (
 	. "github.com/infrago/base"
 	"github.com/infrago/http"
 	"github.com/infrago/infra"
-	"github.com/infrago/log"
 	"github.com/infrago/queue"
 )
 
@@ -18,7 +17,7 @@ func init() {
 			time.Second, time.Second * 3, time.Second * 5,
 		},
 		Action: func(ctx *queue.Context) {
-			log.Debug("queue action...")
+			infra.Debug("queue action...")
 			ctx.Retry()
 		},
 	})
