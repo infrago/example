@@ -14,5 +14,9 @@ driver = "redis"
 [queue]
 driver = "redis"
 
+[data]
+driver = "postgres"
+url = "postgres://test:test@127.0.0.1:5432/test?sslmode=disable"
+
 [setting]
 msg = "hello"
