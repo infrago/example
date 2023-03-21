@@ -1,2 +1,2 @@
 # example
-infra.go example.
+infra.Go example.
