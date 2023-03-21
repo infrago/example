@@ -17,7 +17,7 @@ func init() {
 		},
 	})
 
-	infra.Register(".data", http.Route{
+	infra.Register(".data", http.Router{
 		Uri: "/data", Name: "data", Text: "data",
 		Action: func(ctx *http.Context) {
 

@@ -7,27 +7,27 @@ import (
 )
 
 func init() {
-	infra.Register(".index", http.Route{
+	infra.Register(".index", http.Router{
 		Uri: "/", Name: "首页", Text: "首页",
 		Action: func(ctx *http.Context) {
 			ctx.Text("hello world.")
 		},
 	})
 
-	infra.Register(".method", http.Route{
+	infra.Register(".method", http.Router{
 		Uri: "/method", Name: "方法支持", Text: "方法支持",
 		Routing: http.Routing{
-			GET: http.Route{
+			GET: http.Router{
 				Action: func(ctx *http.Context) {
 					ctx.Text("get hello world.")
 				},
 			},
-			POST: http.Route{
+			POST: http.Router{
 				Action: func(ctx *http.Context) {
 					ctx.Text("post hello world.")
 				},
 			},
-			PUT: http.Route{
+			PUT: http.Router{
 				Action: func(ctx *http.Context) {
 					ctx.Text("put hello world.")
 				},

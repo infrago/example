@@ -9,7 +9,7 @@ import (
 
 func init() {
 
-	infra.Register(".upload", http.Route{
+	infra.Register(".upload", http.Router{
 		Uri: "/upload", Name: "upload", Text: "upload",
 		Action: func(ctx *http.Context) {
 			file, _, err := store.Upload(ctx.Upload["file"])

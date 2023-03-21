@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	infra.Register(".mutex", http.Route{
+	infra.Register(".mutex", http.Router{
 		Uri: "/mutex", Name: "mutex", Text: "mutex",
 		Action: func(ctx *http.Context) {
 
