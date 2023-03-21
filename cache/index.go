@@ -8,7 +8,7 @@ import (
 )
 
 func init() {
-	infra.Register(".cache", http.Router{
+	infra.Register(".cache", http.Route{
 		Uri: "/cache", Name: "cache", Text: "cache",
 		Action: func(ctx *http.Context) {
 			cache.Write("key", Map{"acd": "asdfasdf"})

@@ -16,7 +16,7 @@ replace github.com/infrago/log-default => ../log-default
 
 replace github.com/infrago/http => ../http
 
-replace github.com/infrago/htt-default => ../http-default
+replace github.com/infrago/http-default => ../http-default
 
 replace github.com/infrago/view => ../view
 

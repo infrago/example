@@ -22,7 +22,7 @@ func init() {
 		},
 	})
 
-	infra.Register(".queue", http.Router{
+	infra.Register(".queue", http.Route{
 		Uri: "/queue", Name: "queue", Text: "queue",
 		Action: func(ctx *http.Context) {
 			queue.Enqueue("queue", Map{"msg": "msg from http"})

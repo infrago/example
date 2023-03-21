@@ -16,7 +16,7 @@ func init() {
 		},
 	})
 
-	infra.Register(".event", http.Router{
+	infra.Register(".event", http.Route{
 		Uri: "/event", Name: "event", Text: "event",
 		Action: func(ctx *http.Context) {
 			event.Notify("event", Map{"msg": "msg from http"})
