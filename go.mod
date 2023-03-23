@@ -8,6 +8,8 @@ replace github.com/infrago/builtin => ../builtin
 
 replace github.com/infrago/util => ../util
 
+replace github.com/infrago/cron => ../cron
+
 replace github.com/infrago/infra => ../infra
 
 replace github.com/infrago/log => ../log
