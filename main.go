@@ -13,6 +13,7 @@ import (
 	_ "github.com/infrago/store-object"
 
 	_ "github.com/infrago/example/cache"
+	_ "github.com/infrago/example/cron"
 	_ "github.com/infrago/example/data"
 	_ "github.com/infrago/example/event"
 	_ "github.com/infrago/example/http"

@@ -77,11 +77,12 @@ require (
 	github.com/infrago/cache v0.0.0-00010101000000-000000000000
 	github.com/infrago/cache-buntdb v0.0.0-00010101000000-000000000000
 	github.com/infrago/cache-redis v0.0.0-00010101000000-000000000000
+	github.com/infrago/cron v0.0.0-00010101000000-000000000000
+	github.com/infrago/data v0.0.0-00010101000000-000000000000
 	github.com/infrago/event v0.0.0-00010101000000-000000000000
 	github.com/infrago/event-nats v0.0.0-00010101000000-000000000000
 	github.com/infrago/event-redis v0.0.0-00010101000000-000000000000
 	github.com/infrago/http v0.0.0-00010101000000-000000000000
-	github.com/infrago/log v0.0.0-20230318112749-c34741a864e0
 	github.com/infrago/mutex v0.0.0-00010101000000-000000000000
 	github.com/infrago/mutex-redis v0.0.0-00010101000000-000000000000
 	github.com/infrago/queue v0.0.0-00010101000000-000000000000
@@ -102,10 +103,10 @@ require (
 	github.com/gomodule/redigo v1.8.9 // indirect
 	github.com/gorilla/mux v1.8.0 // indirect
 	github.com/infrago/cache-default v0.0.0-00010101000000-000000000000 // indirect
-	github.com/infrago/data v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/data-postgres v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/event-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/http-default v0.0.0-20230317082929-e99618b22fae // indirect
+	github.com/infrago/log v0.0.0-20230318112749-c34741a864e0 // indirect
 	github.com/infrago/log-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/mutex-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/queue-default v0.0.0-00010101000000-000000000000 // indirect
@@ -140,6 +141,7 @@ require (
 	github.com/nats-io/nkeys v0.3.0 // indirect
 	github.com/nats-io/nuid v1.0.1 // indirect
 	github.com/panjf2000/ants/v2 v2.7.1 // indirect
+	github.com/robfig/cron/v3 v3.0.1 // indirect
 	github.com/spacemonkeygo/spacelog v0.0.0-20180420211403-2296661a0572 // indirect
 	github.com/spaolacci/murmur3 v1.1.0 // indirect
 	github.com/speps/go-hashids/v2 v2.0.1 // indirect

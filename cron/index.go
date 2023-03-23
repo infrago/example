@@ -1,7 +1,6 @@
 package trigger
 
 import (
-	. "github.com/infrago/base"
 	"github.com/infrago/cron"
 	"github.com/infrago/infra"
 )
