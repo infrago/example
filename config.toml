@@ -13,6 +13,7 @@ driver = "redis"
 
 [queue]
 driver = "redis"
+external = true
 
 [data]
 driver = "postgres"

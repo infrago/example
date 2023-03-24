@@ -13,11 +13,11 @@ func init() {
 
 	infra.Register("queue", queue.Queue{
 		Name: "queue", Text: "queue",
-		Retry: 3, Delay: queue.Delay{
+		Retry: queue.Retry{
 			time.Second, time.Second * 3, time.Second * 5,
 		},
 		Action: func(ctx *queue.Context) {
-			infra.Debug("queue action...")
+			infra.Debug("queue action...", ctx.Value)
 			ctx.Retry()
 		},
 	})
@@ -25,7 +25,7 @@ func init() {
 	infra.Register(".queue", http.Router{
 		Uri: "/queue", Name: "queue", Text: "queue",
 		Action: func(ctx *http.Context) {
-			queue.Enqueue("queue", Map{"msg": "msg from http"})
+			queue.PublishTo(infra.DEFAULT, "queue", Map{"msg": "msg from http"})
 			ctx.Text("ok")
 		},
 	})
