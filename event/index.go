@@ -9,6 +9,10 @@ import (
 
 func init() {
 
+	infra.Register("event", event.Declare{
+		Name: "event声明", Text: "event声明",
+	})
+
 	infra.Register("event", event.Event{
 		Name: "event", Text: "event",
 		Action: func(ctx *event.Context) {
@@ -19,7 +23,7 @@ func init() {
 	infra.Register(".event", http.Router{
 		Uri: "/event", Name: "event", Text: "event",
 		Action: func(ctx *http.Context) {
-			event.Notify("event", Map{"msg": "msg from http"})
+			event.Publish("event", Map{"msg": "msg from http"})
 			ctx.Text("ok")
 		},
 	})
