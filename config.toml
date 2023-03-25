@@ -15,6 +15,10 @@ driver = "redis"
 driver = "redis"
 external = true
 
+[event]
+driver = "nats"
+setting = { "url" = "nats://127.0.0.1:4222", "password" = "password" }
+
 [data]
 driver = "postgres"
 url = "postgres://test:test@127.0.0.1:5432/test?sslmode=disable"
