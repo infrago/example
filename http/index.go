@@ -1,7 +1,10 @@
 package trigger
 
 import (
+	"time"
+
 	. "github.com/infrago/base"
+	"github.com/infrago/cache"
 	"github.com/infrago/http"
 	"github.com/infrago/infra"
 )
@@ -10,7 +13,16 @@ func init() {
 	infra.Register(".index", http.Router{
 		Uri: "/", Name: "首页", Text: "首页",
 		Action: func(ctx *http.Context) {
-			ctx.Text("hello world.")
+
+			id, err := cache.Sequence("key1", 0, 1, time.Second*10)
+			if err != nil {
+				ctx.Text(err.Error())
+				return
+			}
+
+			ctx.Json(Map{
+				"id": id,
+			})
 		},
 	})
 
