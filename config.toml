@@ -12,8 +12,7 @@ driver = "redis"
 driver = "redis"
 
 [queue]
-driver = "redis"
-external = true
+driver = "default"
 
 [event]
 driver = "nats"
