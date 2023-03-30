@@ -25,12 +25,17 @@ replace github.com/infrago/view => ../view
 replace github.com/infrago/view-default => ../view-default
 
 replace github.com/infrago/cache => ../cache
-
 replace github.com/infrago/cache-default => ../cache-default
-
 replace github.com/infrago/cache-redis => ../cache-redis
+replace github.com/infrago/cache-file => ../cache-file
+replace github.com/infrago/cache-memory => ../cache-memory
 
-replace github.com/infrago/cache-buntdb => ../cache-buntdb
+
+replace github.com/infrago/session => ../session
+replace github.com/infrago/session-default => ../session-default
+replace github.com/infrago/session-redis => ../session-redis
+replace github.com/infrago/session-file => ../session-file
+replace github.com/infrago/session-memory => ../session-memory
 
 replace github.com/infrago/mutex => ../mutex
 
