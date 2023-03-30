@@ -25,17 +25,28 @@ replace github.com/infrago/view => ../view
 replace github.com/infrago/view-default => ../view-default
 
 replace github.com/infrago/cache => ../cache
+
 replace github.com/infrago/cache-default => ../cache-default
+
 replace github.com/infrago/cache-redis => ../cache-redis
+
 replace github.com/infrago/cache-file => ../cache-file
+
 replace github.com/infrago/cache-memory => ../cache-memory
 
+replace github.com/infrago/cache-buntdb => ../cache-buntdb
 
 replace github.com/infrago/session => ../session
+
 replace github.com/infrago/session-default => ../session-default
+
 replace github.com/infrago/session-redis => ../session-redis
+
 replace github.com/infrago/session-file => ../session-file
+
 replace github.com/infrago/session-memory => ../session-memory
+
+replace github.com/infrago/session-buntdb => ../session-buntdb
 
 replace github.com/infrago/mutex => ../mutex
 
@@ -88,11 +99,15 @@ require (
 	github.com/infrago/event-nats v0.0.0-00010101000000-000000000000
 	github.com/infrago/event-redis v0.0.0-00010101000000-000000000000
 	github.com/infrago/http v0.0.0-00010101000000-000000000000
+	github.com/infrago/log v0.0.0-20230318112749-c34741a864e0
 	github.com/infrago/mutex v0.0.0-00010101000000-000000000000
 	github.com/infrago/mutex-redis v0.0.0-00010101000000-000000000000
 	github.com/infrago/queue v0.0.0-00010101000000-000000000000
 	github.com/infrago/queue-nats v0.0.0-00010101000000-000000000000
 	github.com/infrago/queue-redis v0.0.0-00010101000000-000000000000
+	github.com/infrago/session v0.0.0-00010101000000-000000000000
+	github.com/infrago/session-buntdb v0.0.0-00010101000000-000000000000
+	github.com/infrago/session-redis v0.0.0-00010101000000-000000000000
 	github.com/infrago/store v0.0.0-00010101000000-000000000000
 	github.com/infrago/store-ipfs v0.0.0-00010101000000-000000000000
 	github.com/infrago/store-object v0.0.0-00010101000000-000000000000
@@ -111,10 +126,10 @@ require (
 	github.com/infrago/data-postgres v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/event-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/http-default v0.0.0-20230317082929-e99618b22fae // indirect
-	github.com/infrago/log v0.0.0-20230318112749-c34741a864e0 // indirect
 	github.com/infrago/log-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/mutex-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/queue-default v0.0.0-00010101000000-000000000000 // indirect
+	github.com/infrago/session-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/store-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/view v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/view-default v0.0.0-00010101000000-000000000000 // indirect

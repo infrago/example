@@ -2,16 +2,14 @@ package main
 
 import (
 	_ "github.com/infrago/builtin"
-	_ "github.com/infrago/cache-file"
-	_ "github.com/infrago/cache-memory"
+	_ "github.com/infrago/cache-buntdb"
 	_ "github.com/infrago/cache-redis"
 	_ "github.com/infrago/event-nats"
 	_ "github.com/infrago/event-redis"
 	_ "github.com/infrago/mutex-redis"
 	_ "github.com/infrago/queue-nats"
 	_ "github.com/infrago/queue-redis"
-	_ "github.com/infrago/session-file"
-	_ "github.com/infrago/session-memory"
+	_ "github.com/infrago/session-buntdb"
 	_ "github.com/infrago/session-redis"
 	_ "github.com/infrago/store-ipfs"
 	_ "github.com/infrago/store-object"
@@ -23,6 +21,7 @@ import (
 	_ "github.com/infrago/example/http"
 	_ "github.com/infrago/example/mutex"
 	_ "github.com/infrago/example/queue"
+	_ "github.com/infrago/example/session"
 	_ "github.com/infrago/example/store"
 	_ "github.com/infrago/example/trigger"
 
