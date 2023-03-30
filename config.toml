@@ -3,7 +3,7 @@ mode = "dev"
 
 
 [http]
-port = 80
+port = 88
 
 [cache]
 driver = "redis"

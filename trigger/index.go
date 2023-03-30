@@ -8,12 +8,12 @@ import (
 func init() {
 	infra.Register(infra.START, infra.Trigger{
 		Action: func(ctx *infra.Context) {
-			log.Debug("start....")
+			log.Debug("start....", infra.Generate())
 		},
 	})
 	infra.Register(infra.STOP, infra.Trigger{
 		Action: func(ctx *infra.Context) {
-			log.Debug("stop....")
+			log.Debug("stop....", infra.Generate())
 		},
 	})
 }
