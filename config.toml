@@ -3,7 +3,8 @@ mode = "dev"
 
 
 [http]
-port = 88
+driver = "mux"
+port = 80
 
 [cache]
 driver = "redis"

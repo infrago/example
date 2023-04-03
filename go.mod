@@ -20,6 +20,8 @@ replace github.com/infrago/http => ../http
 
 replace github.com/infrago/http-default => ../http-default
 
+replace github.com/infrago/http-mux => ../http-mux
+
 replace github.com/infrago/view => ../view
 
 replace github.com/infrago/view-default => ../view-default
@@ -99,6 +101,7 @@ require (
 	github.com/infrago/event-nats v0.0.0-00010101000000-000000000000
 	github.com/infrago/event-redis v0.0.0-00010101000000-000000000000
 	github.com/infrago/http v0.0.0-00010101000000-000000000000
+	github.com/infrago/http-mux v0.0.0-00010101000000-000000000000
 	github.com/infrago/log v0.0.0-20230318112749-c34741a864e0
 	github.com/infrago/mutex v0.0.0-00010101000000-000000000000
 	github.com/infrago/mutex-redis v0.0.0-00010101000000-000000000000
