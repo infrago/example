@@ -76,13 +76,13 @@ replace github.com/infrago/data => ../data
 
 replace github.com/infrago/data-postgres => ../data-postgres
 
-replace github.com/infrago/store => ../store
+replace github.com/infrago/storage => ../storage
 
-replace github.com/infrago/store-default => ../store-default
+replace github.com/infrago/storage-default => ../storage-default
 
-replace github.com/infrago/store-ipfs => ../store-ipfs
+replace github.com/infrago/storage-ipfs => ../storage-ipfs
 
-replace github.com/infrago/store-object => ../store-object
+replace github.com/infrago/storage-object => ../storage-object
 
 require (
 	github.com/infrago/base v0.0.0-00010101000000-000000000000
@@ -111,9 +111,9 @@ require (
 	github.com/infrago/session v0.0.0-00010101000000-000000000000
 	github.com/infrago/session-buntdb v0.0.0-00010101000000-000000000000
 	github.com/infrago/session-redis v0.0.0-00010101000000-000000000000
-	github.com/infrago/store v0.0.0-00010101000000-000000000000
-	github.com/infrago/store-ipfs v0.0.0-00010101000000-000000000000
-	github.com/infrago/store-object v0.0.0-00010101000000-000000000000
+	github.com/infrago/storage v0.0.0-00010101000000-000000000000
+	github.com/infrago/storage-ipfs v0.0.0-00010101000000-000000000000
+	github.com/infrago/storage-object v0.0.0-00010101000000-000000000000
 )
 
 require (
@@ -133,7 +133,7 @@ require (
 	github.com/infrago/mutex-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/queue-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/session-default v0.0.0-00010101000000-000000000000 // indirect
-	github.com/infrago/store-default v0.0.0-00010101000000-000000000000 // indirect
+	github.com/infrago/storage-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/view v0.0.0-00010101000000-000000000000 // indirect
 	github.com/infrago/view-default v0.0.0-00010101000000-000000000000 // indirect
 	github.com/ipfs/go-cid v0.3.2 // indirect
