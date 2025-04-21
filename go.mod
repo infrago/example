@@ -1,6 +1,6 @@
 module github.com/infrago/example
 
-go 1.17
+go 1.18
 
 replace github.com/infrago/base => ../base
 
